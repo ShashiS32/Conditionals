@@ -1,10 +1,9 @@
-x = int(input("What is x? "))
-y = int(input("What is y? "))
+name = input("What is ur name? ")
 
-
-if x < y:
-    print("X is less than y")
-elif x > y:
-    print("X is greater than y")
-else:
-    print("X is = to Y")
+match name:
+    case"Harry" | "Hermione" | "Ron":
+        print("Gryffindor")
+    case"Draco":
+        print("Slytherin")
+    case _:
+        print("Who?")
