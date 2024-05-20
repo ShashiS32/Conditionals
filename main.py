@@ -1,9 +1,8 @@
-name = input("What is ur name? ")
+answer = input("What is the Answer to the universe Great Question of Life, the Universe, and Everything? ").lower()
 
-match name:
-    case"Harry" | "Hermione" | "Ron":
-        print("Gryffindor")
-    case"Draco":
-        print("Slytherin")
-    case _:
-        print("Who?")
+if answer.isdigit() and int(answer) == 42:
+    print("Yes")
+elif answer == "forty two" or answer == "forty-two":
+    print("Yes")
+else:
+    print("No")
