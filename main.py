@@ -1,13 +1,13 @@
-response = str(input(""))
+calculator = input("Expresion: ").split(" ")
+x, y, z = calculator
 
-
-if "." in response:
-    parts = response.split(".", 1)
-
-
-    if len(parts) > 1:
-        result = parts[1]
-    else:
-        result = ""
-
-    print(f"image/{result}")
+a = float(x)
+b = float(z)
+if y == "+":
+    print(f"{a + b:.1f}")
+elif y == "-":
+     print(f"{a - b:.1f}")
+elif y == "*":
+     print(f"{a * b:.1f}")
+else :
+     print(f"{a / b:.1f}")
