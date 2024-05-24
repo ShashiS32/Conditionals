@@ -1,13 +1,9 @@
-calculator = input("Expresion: ").split(" ")
-x, y, z = calculator
+time = str(input("What time is it? ")).split(":")
+x , y = time
 
-a = float(x)
-b = float(z)
-if y == "+":
-    print(f"{a + b:.1f}")
-elif y == "-":
-     print(f"{a - b:.1f}")
-elif y == "*":
-     print(f"{a * b:.1f}")
-else :
-     print(f"{a / b:.1f}")
+if float(x) < 12:
+    print("Breakfast")
+elif float(x) <= 18 and float(y) <= 30:
+    print("Lunch")
+else:
+    print("dinner")
