@@ -1,8 +1,9 @@
-answer = input("What is the Answer to the universe Great Question of Life, the Universe, and Everything? ").lower()
+response = str(input("Greetings: "))
 
-if answer.isdigit() and int(answer) == 42:
-    print("Yes")
-elif answer == "forty two" or answer == "forty-two":
-    print("Yes")
+if "hello" in response.lower():
+    print("0$")
+
+elif response[0].lower()== "h":
+    print ("20$")
 else:
-    print("No")
+    print("100$")
