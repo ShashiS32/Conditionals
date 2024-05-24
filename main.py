@@ -1,9 +1,13 @@
-response = str(input("Greetings: "))
+response = str(input(""))
 
-if "hello" in response.lower():
-    print("0$")
 
-elif response[0].lower()== "h":
-    print ("20$")
-else:
-    print("100$")
+if "." in response:
+    parts = response.split(".", 1)
+
+
+    if len(parts) > 1:
+        result = parts[1]
+    else:
+        result = ""
+
+    print(f"image/{result}")
