@@ -1,9 +1,8 @@
-time = str(input("What time is it? ")).split(":")
-x , y = time
+answ = input("camelCase: ")
 
-if float(x) < 12:
-    print("Breakfast")
-elif float(x) <= 18 and float(y) <= 30:
-    print("Lunch")
-else:
-    print("dinner")
+for letter in answ:
+    if letter.isupper():
+        print("_" + letter.lower(), end="")
+
+    else:
+        print(letter, end="")
